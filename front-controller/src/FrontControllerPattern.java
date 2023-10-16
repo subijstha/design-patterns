@@ -7,7 +7,11 @@ import View.TeacherView;
 
 public class FrontControllerPattern {
     public static void main(String[] args) {
-
+/*
+        FrontController frontController = new FrontController();
+        frontController.dispatchRequest("Teacher");
+        frontController.dispatchRequest("Student");
+*/
         System.out.println("Creating dispatcher");
         Dispatching dispatcher = new Dispatching();
 
