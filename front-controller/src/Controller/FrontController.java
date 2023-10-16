@@ -7,7 +7,7 @@ import java.util.Date;
 public class FrontController {
     private Dispatching dispatching;
 
-    public FrontController(){
+    public FrontController(Dispatching dispatching){
         dispatching = new Dispatching();
     }
 
@@ -24,7 +24,7 @@ public class FrontController {
         trackRequest(request);
 
         if(isAuthenticUser()){
-            dispatching.dispatch(request);
+            dispatching.dispatchRequest(request);
         }
     }
 }
