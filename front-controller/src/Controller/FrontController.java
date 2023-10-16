@@ -8,7 +8,7 @@ public class FrontController {
     private Dispatching dispatching;
 
     public FrontController(Dispatching dispatching){
-        dispatching = new Dispatching();
+        this.dispatching = dispatching;
     }
 
     private boolean isAuthenticUser(){
