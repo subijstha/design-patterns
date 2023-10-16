@@ -2,6 +2,8 @@ package Controller;
 
 import Dispatcher.Dispatching;
 
+import java.util.Date;
+
 public class FrontController {
     private Dispatching dispatching;
 
@@ -15,7 +17,7 @@ public class FrontController {
     }
 
     private void trackRequest(String request){
-        System.out.println("Request View: " + request);
+        System.out.println(new Date() + " # Request View: " + request);
     }
 
     public void dispatchRequest(String request){
